@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            width: 70%; height: 1000px;
+            margin-left: auto; margin-right: auto;
+            margin-top: 100px;  border: 1px solid=rgb(220, 227, 235); 
+            border-width: 1px;
+        }
+        table{
+            margin-left: 10px; margin-right: 10px;
+            margin-top: 20px; 
+            padding:10px; border:1px solid=gray;
+        }
+
+        .userTable{border: none; border-collapse: collapse; width:95%;
+                margin-left:auto; margin-right: auto;
+        }
+        .userTable td{padding:10px; border: 1px solid #b9babb;
+                font-size:12px;
+        }
+        .userTable td.usertd{background-color: #E4E6E9; font-weight: bold;}
+        .star{color:red; margin-right: 5px;}
+        .userfont1{
+            font-weight: bold; font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <table class="userTable">
+            <colgroup>
+                <col width="130px" />
+                <col width="540px" />
+            </colgroup>
+        <tr>
+            <td class="usertd">
+                <span class="star">*</span>아이디</td>
+                <td class="">
+                    <input type="text" name="id" value="" maxlength="15"
+                    class="" style="width: 120px;">
+                    <button type="button" 
+                    style="background-color: #3d3d3d; color:#ffffff;
+                     width:70px; height:23px;" onClick="">중복확인</button>
+                </td>
+        </tr>
+        </table>
+       
+    </fieldset>
+    
+</body>
+</html>

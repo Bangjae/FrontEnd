@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qu04.html</title>
+    <style>
+        table{
+            border: 1px solid black;
+        }
+
+        tr{
+            border:1px solid black;
+        }
+
+        td{
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h2>document.write()로 표 만들기</h2>
+
+    <hr>
+    <table>
+        <tr>
+            <td style="font-weight: bold;">n</td>
+            <script>
+                for(var i=0;i<=9;i++){
+                    document.write("<td>"+i+"</td>")
+                }
+            </script>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">
+                n<sup style="font-weight: bold;">2</sup></td>
+            <script>
+                for(var i=0;i<=9;i++){
+                    var n;
+                    n = i*i
+                    document.write("<td>"+n+"</td>")
+                }
+            </script>
+        </tr>
+    </table>
+</body>
+</html>
